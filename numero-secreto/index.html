@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numero secreto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="niveles">
+            <button onclick="nivelar(10)" id="facil">Facil</button>
+            <button onclick="nivelar(50)" id="intermedio">Intermedio</button>
+            <button onclick="nivelar(100)" id="dificil">Dificil</button>
+        </div>
+        <div class="minicontainer">
+            <h1>Encuentra el Número Secreto</h1>
+            <div id="entrada">
+            <p id="resultado"></p>
+            <input id="entradaUsuario" type="number" placeholder="Ingresa un número:">
+            </div>
+            <div id="botones">
+            <button id="intento" onclick="verificar()" type="button" disabled>Intentar</button>
+            <button id="reset" onclick="nuevoJuego()" type="button" disabled>Nueva partida</button>
+            </div>
+        </div>
+        <h3>Elige un nivel</h3>
+    </div>
+    <script src="rest.js"></script>
+</body>
+</html>
