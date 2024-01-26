@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de mensajes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="img/GOTA DE AGUA VILLA DISEÑOS.png" alt="logo-empresa">
+        </div>
+        <div class="modos">
+            <button class="modo-activo" id="modo-oscuro"><img src="img/moon-white.png" alt="modo-oscuro"></button>
+            <button class="modo-desactivo" id="modo-claro"><img src="img/sun-.svg" alt="modo-claro"></button>
+        </div>
+    </header>
+    <main>
+        <section class="entrada-usuario">
+            <div class="textarea">
+                <textarea id="entrada" placeholder="ingrese el texto aqui" cols="30" rows="10"></textarea>
+            </div>
+            <span id="aviso">&bkarow;Solo admite minisculas y sin acentuaciones</span>
+            <div class="botones">
+                <button id="cifrar">cifrar</button>
+                <button id="descifrar">descifrar</button>
+            </div>
+        </section>
+        <section class="resultado-cifrado">
+            <div class="resultado">
+                <img src="img/a-person-standing-at-the-entrance-of-a-maze--holdi.png" alt="Not have information">
+                <span>No hay informacion para mostrar</span>
+            </div>
+            <button class="boton-copiar" id="copiar">Copiar</button>
+        </section>
+    </main>
+    <script src="scritp.js"></script>
+</body>
+</html>
